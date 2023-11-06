@@ -22,7 +22,7 @@ for i in range(5):
     
     area = soup.find_all('div',class_='r-ent')
     
-    url = 'https://www.ptt.cc' + soup.find_all('a',class_='btn wide')[1].get('href')
+    url = 'https://www.ptt.cc' + soup.find_all('a',class_='btn wide')[1].get('href')#往上一頁
     
     for item in area:
         if item.find('a')!=None:
